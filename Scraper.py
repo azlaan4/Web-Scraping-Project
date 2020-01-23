@@ -1,10 +1,10 @@
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import requests # Getting Webpage content
-from bs4 import BeautifulSoup as bs # Scraping webpages
-import matplotlib.pyplot as plt # Visualization
-import matplotlib.style as style # For styling plots
-from matplotlib import pyplot as mp # For Saving plots as images
+import numpy as np  # linear algebra
+import pandas as pd     # data processing, CSV file I/O (e.g. pd.read_csv)
+import requests     # Getting Web page content
+from bs4 import BeautifulSoup as bs     # Scraping web pages
+import matplotlib.pyplot as plt     # Visualization
+import matplotlib.style as style    # For styling plots
+from matplotlib import pyplot as mp     # For Saving plots as images
 
 # For displaying plots in jupyter notebook
 # %matplotlib inline
@@ -55,7 +55,7 @@ no_of_tags[:5]
 # as argument to our function. Function to check, if there is any error in length of the extracted
 # bs4 object
 
-def error_checking (list_name, length):
+def error_checking(list_name, length):
     if (len(list_name) != length):
         print("Error in {} parsing, length not equal to {}!!!".format(list_name, length))
         return -1
